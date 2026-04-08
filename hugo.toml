@@ -1,3 +1,7 @@
 baseURL = 'https://example.org/'
 locale = 'en-us'
 title = 'Blog'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
