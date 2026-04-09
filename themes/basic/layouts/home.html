@@ -1,9 +1,13 @@
 {{ define "main" }}
   {{ .Content }}
   {{ range site.RegularPages }}
-    <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}
+    <section class="text-lg ml-2">
+        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{ $dateHuman := .Date | time.Format "01-02-2006" }}
+        <p>
+          <span class="text-muted mr-20"><time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></span>
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </p>
     </section>
   {{ end }}
 {{ end }}

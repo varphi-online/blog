@@ -1,7 +1,13 @@
 baseURL = 'https://example.org/'
 locale = 'en-us'
-title = 'yes'
+title = "varphi-online's Blog"
 theme = 'basic'
+
+[outputs]
+home = ['html', 'rss']
+section = ['html', 'rss']
+taxonomy = []
+term = []
 
 [caches]
   [caches.images]
@@ -17,6 +23,14 @@ theme = 'basic'
   [[build.cachebusters]]
     source = '(postcss|tailwind)\.config\.js'
     target = 'css'
+
+# https://discourse.gohugo.io/t/how-to-optimize-image-insertion-and-management-with-hugo-and-obsidian/54349/2
+[markup.goldmark.renderHooks.image]
+  useEmbedded = 'always'
+
+[markup.goldmark.renderHooks.link]
+  useEmbedded = 'always'
+
 [module]
   [[module.mounts]]
     source = 'assets'
@@ -25,3 +39,23 @@ theme = 'basic'
     disableWatch = true
     source = 'hugo_stats.json'
     target = 'assets/notwatching/hugo_stats.json'
+  [[module.mounts]]
+    source = 'content/posts/attachments'
+    target = 'assets/attachments'
+
+[markup.highlight]
+lineNos = true
+style = 'gruvbox-light'
+noClasses = false
+
+# https://gohugo.io/content-management/mathematics/
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$']]
+          inline = [['$', '$']]
+[params]
+  math = true

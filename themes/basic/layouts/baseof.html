@@ -5,15 +5,21 @@
   {{ with (templates.Defer (dict "key" "global")) }}
     {{ partial "css.html" . }}
   {{ end }}
+  {{ if .Param "math" }}
+    {{ partialCached "math.html" . }}
+  {{ end }}
+  {{ with .OutputFormats.Get "rss" }}
+  		{{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+	{{ end }}
 </head>
-<body>
-  <header>
+<body style="display: flex; flex-direction: column; height: 100vh;">
+  <header class="mb-10">
     {{ partial "header.html" . }}
   </header>
-  <main>
+  <main class="mb-5">
     {{ block "main" . }}{{ end }}
   </main>
-  <footer>
+  <footer class="mt-auto">
     {{ partial "footer.html" . }}
   </footer>
 </body>

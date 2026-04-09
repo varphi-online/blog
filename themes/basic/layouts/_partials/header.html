@@ -1,2 +1,33 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<span class="flex w-full justify-between">
+    <a href="/" class="!text-muted" style="text-decoration: underline;">{{ site.Title }}</a>
+    <script>
+        const themes = ["light","dark"];
+        function toggleTheme(){
+        const lastTheme = document.body.className;
+        const nextTheme = themes.at((themes.indexOf(lastTheme) + 1) % themes.length);
+        document.body.className = nextTheme;
+        localStorage.setItem("theme", nextTheme);
+        document.getElementById(lastTheme).style = null;
+        document.getElementById(nextTheme).style.display = "block";
+    }
+	</script>
+    <style>
+        .theme {
+          height: 2em;
+          display: none;
+        }
+    </style>
+    <button
+        onclick="toggleTheme()"
+        class="cursor-pointer rounded-md bg-hole p-1.5">
+		<img id="light" src="/sun.svg" class="theme" style="display: block;">
+		<img id="dark" src="/moon.svg" class="theme">
+	</button>
+    <script>(()=>{
+        const theme = localStorage.getItem('theme');
+        document.body.className = theme ? theme : "dark";
+        document.querySelectorAll(".theme").forEach(t=>t.style = null);
+        document.getElementById(document.body.className).style.display = "block";
+    })()</script>
+</span>
+{{/*  {{ partial "menu.html" (dict "menuID" "main" "page" .) }}  */}}
