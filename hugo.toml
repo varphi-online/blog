@@ -51,6 +51,9 @@ noClasses = false
 # https://gohugo.io/content-management/mathematics/
 [markup]
   [markup.goldmark]
+	[markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        title = true
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.passthrough]
         enable = true

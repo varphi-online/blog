@@ -20,8 +20,8 @@
     <button
         onclick="toggleTheme()"
         class="cursor-pointer rounded-md bg-hole p-1.5">
-		<img id="light" src="/sun.svg" class="theme" style="display: block;">
-		<img id="dark" src="/moon.svg" class="theme">
+		<img id="light" src='{{ relURL "sun.svg" }}' class="theme" style="display: block;">
+		<img id="dark" src='{{ relURL "moon.svg" }}' class="theme">
 	</button>
     <script>(()=>{
         const theme = localStorage.getItem('theme');

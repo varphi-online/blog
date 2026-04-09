@@ -5,6 +5,7 @@
       "body",
       "button",
       "div",
+      "em",
       "footer",
       "h1",
       "h2",
@@ -16,11 +17,13 @@
       "main",
       "meta",
       "p",
+      "path",
       "pre",
       "script",
       "section",
       "span",
       "style",
+      "svg",
       "table",
       "td",
       "time",
@@ -29,6 +32,7 @@
     ],
     "classes": [
       "!text-muted",
+      "anchor-link",
       "bg-hole",
       "chroma",
       "cursor-pointer",
@@ -37,9 +41,13 @@
       "font-mono",
       "gap-1.5",
       "gap-2",
+      "h-(--text-base)",
       "h-(--text-lg)",
+      "h-(text-base)",
+      "h-1.25",
       "hidden",
       "highlight",
+      "icon",
       "items-center",
       "justify-between",
       "justify-center",
@@ -48,7 +56,7 @@
       "lg:gap-3",
       "lntable",
       "lntd",
-      "mb-10",
+      "mb-2",
       "mb-4",
       "mb-5",
       "ml-2",
@@ -65,8 +73,8 @@
     ],
     "ids": [
       "dark",
-      "light",
-      "portability-ruined-everything"
+      "everyone-deserves-to-see-the-fuss",
+      "light"
     ]
   }
 }

@@ -1,11 +1,11 @@
 +++
 date = '2026-04-08T16:41:48-07:00'
-draft = true
-title = 'I Hate SSR'
+draft = false
+title = 'A Test Page for Everyone'
 +++
-![caption or something](attachments/Pasted%20image%2020260408191545.png)
-
-# "Portability" Ruined Everything
+![alt text would go here](attachments/Pasted%20image%2020260408191545.png)
+*caption would go here*
+# "Everyone Deserves to See the fuss"
 
 $$B=\begin{bmatrix}
 C_{a_{1},b_{1}}&\dots&0 \\

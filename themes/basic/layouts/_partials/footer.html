@@ -1,11 +1,11 @@
 <div class="flex flex-col items-center lg:flex-row w-full justify-center gap-1.5 lg:gap-3 font-mono text-muted py-2">
-	<p>©{{ now.Year }} Varphi</p>
+	<p>©{{ now.Year }} <a href="https://varphi.online">Varphi</a></p>
 	<p class="hidden lg:block">│</p>
 	<a href="https://github.com/varphi-online/blog">Code</a>
 	<p class="hidden lg:block">│</p>
 	{{ with .Site.Home.OutputFormats.Get "RSS" }}
   		<a href="{{ .Permalink }}" class="flex gap-2 items-center">
-  		  <img src="/rss.png" class="h-(--text-lg)" alt="RSS" />
+  		  <img src='{{ relURL "rss.png" }}' class="h-(--text-lg)" alt="RSS" />
   		  RSS Feed
   		</a>
 	{{ end }}

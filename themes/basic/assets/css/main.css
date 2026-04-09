@@ -19,12 +19,26 @@ body {
   padding-top: 1em;
 	background-color: var(--background);
 	color: var(--foreground);
-  max-width: 50em;
+  max-width: min(48em, 85vw);
   margin: 0 auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) transparent;
+  
+}
+html {
+  scrollbar-color: var(--muted) transparent;
+}
+
+.MathJax {
+  overflow-x: auto;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-size: revert;
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
 ul,ol,li {
@@ -54,7 +68,7 @@ a {
     --secondary: var(--color-white);
     --secondary-foreground: var(--color-black);
 
-    --muted: #333333;
+    --muted: #444444;
     --hole: #f8f8f8;
   }
 
@@ -68,7 +82,7 @@ a {
     --secondary: "#eb8332";
     --secondary-foreground: #1a1d23;
 
-    --muted: #bbbbbb;
+    --muted: #9e9e9e;
     --hole: #06090d;
   }
 
