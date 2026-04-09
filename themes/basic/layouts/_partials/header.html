@@ -1,5 +1,5 @@
 <span class="flex w-full justify-between">
-    <a href="/" class="!text-muted" style="text-decoration: underline;">{{ site.Title }}</a>
+    <a href="{{.Site.Home.Permalink}}" class="!text-muted" style="text-decoration: underline;">{{ site.Title }}</a>
     <script>
         const themes = ["light","dark"];
         function toggleTheme(){
