@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "hugo_stats.json";
+
+@import "components/header.css";
+@import "components/footer.css";
+
+body {
+  color: #222;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 1rem;
+  max-width: 768px;
+}
+
+a {
+  color: #00e;
+  text-decoration: none;
+}
