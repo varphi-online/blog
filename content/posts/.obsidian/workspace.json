@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "f2a37cad07f94294",
@@ -95,8 +94,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "test.md",
-                "collapseAll": false,
+                "file": "forward.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for test"
+              "title": "Backlinks for forward"
             }
           },
           {
@@ -157,21 +156,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "test.md",
+                "file": "forward.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of test"
+              "title": "Outline of forward"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,12 +185,16 @@
   },
   "active": "d91a156cade0e89c",
   "lastOpenFiles": [
+    "attachments/Pasted image 20260409200806.png",
+    "forward.md",
+    "attachments/Pasted image 20260409200757.png",
     "attachments/Pasted image 20260409190325.png",
     "attachments/Pasted image 20260409130133.png",
-    "test.md",
-    "forward.md",
-    "linnotes.md",
     "attachments/Pasted image 20260408191545.png",
+    "attachments/Pasted image 20260409232312.png",
+    "attachments/Pasted image 20260409200742.png",
+    "test.md",
+    "linnotes.md",
     "attachments/Pasted image 20260408185908.png",
     "attachments",
     "Pasted image 20260408185316.png",

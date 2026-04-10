@@ -2,6 +2,7 @@
   "htmlElements": {
     "tags": [
       "a",
+      "blockquote",
       "body",
       "br",
       "button",
@@ -12,6 +13,7 @@
       "footer",
       "h1",
       "h2",
+      "h3",
       "head",
       "header",
       "html",
@@ -28,7 +30,6 @@
       "script",
       "section",
       "span",
-      "strong",
       "style",
       "summary",
       "sup",
@@ -83,18 +84,24 @@
       "text-muted",
       "text-xs",
       "theme",
-      "w-full"
+      "w-full",
+      "wrap-code"
     ],
     "ids": [
-      "but-how",
-      "but-why",
+      "actually-building-it",
+      "but-why-make-your-own",
       "dark",
       "everyone-deserves-to-see-the-fuss",
+      "fullpage",
+      "in-hindsight",
       "light",
+      "managing-accessibility",
       "mistakes-were-made",
       "others-were-not",
       "side-0",
       "side-1",
+      "side-2",
+      "the-identification-activity",
       "what-does-it-take"
     ]
   }

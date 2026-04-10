@@ -22,5 +22,20 @@
   <footer class="mt-auto">
     {{ partial "footer.html" . }}
   </footer>
+  <div id="fullpage" onclick="this.style.display='none';"></div>
+  <script defer>
+    document.addEventListener('DOMContentLoaded',()=>{
+      const i = document.querySelectorAll('img');
+      const f = document.querySelector('#fullpage');
+      i.forEach((g)=>{
+        if(g.className.length>0||g.id.length>0) return;
+        g.style.cursor='zoom-in';
+        g.addEventListener('click',()=>{
+          f.style.backgroundImage=`url("${g.src}")`;
+          f.style.display='block';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
