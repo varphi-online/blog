@@ -25,7 +25,7 @@
 	</button>
     <script>(()=>{
         const theme = localStorage.getItem('theme');
-        document.body.className = theme ? theme : "dark";
+        document.body.className = theme ? theme : "light";
         document.querySelectorAll(".theme").forEach(t=>t.style = null);
         document.getElementById(document.body.className).style.display = "block";
     })()</script>

@@ -1,0 +1,1 @@
+<h{{ .Level }}  {{- with .Attributes.class }} class='{{ . }}' {{- end }}>{{ .Text }}</h{{ .Level }}>

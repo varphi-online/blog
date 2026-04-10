@@ -1,0 +1,14 @@
+<!--https://0xda.de/blog/2024/07/hugo-sides-shortcode/-->
+<span class="side">
+    <label class="side-label" for="side-{{ $.Ordinal }}">{{ .Get 0 }}<sup>{{ add $.Ordinal 1 }}</sup></label>
+    <input class="side-checkbox" type="checkbox" id="side-{{ $.Ordinal }}">
+    <span class="side-content side-{{ if ( .Get 1 ) }}{{ .Get 1 }}{{ else }}right{{end}} side-text">
+        {{- .InnerDeindent | strings.TrimSpace | .Page.RenderString (dict "display" "inline") -}}
+        <span class="side-content side-ord-inner">
+            {{ add $.Ordinal 1 }}
+        </span>
+    </span>
+    <span class="side-content side-{{ if ( .Get 1 ) }}{{ .Get 1 }}{{ else }}right{{end}} side-ord">
+        {{ add $.Ordinal 1 }}
+    </span>
+</span>

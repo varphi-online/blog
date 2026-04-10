@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "test.md",
+                "file": "forward.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "test"
+              "title": "forward"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f2a37cad07f94294",
@@ -185,8 +186,11 @@
   },
   "active": "d91a156cade0e89c",
   "lastOpenFiles": [
-    "linnotes.md",
+    "attachments/Pasted image 20260409190325.png",
+    "attachments/Pasted image 20260409130133.png",
     "test.md",
+    "forward.md",
+    "linnotes.md",
     "attachments/Pasted image 20260408191545.png",
     "attachments/Pasted image 20260408185908.png",
     "attachments",
