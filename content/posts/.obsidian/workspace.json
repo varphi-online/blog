@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f2a37cad07f94294",
@@ -170,7 +171,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 308.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,6 +187,7 @@
   },
   "active": "d91a156cade0e89c",
   "lastOpenFiles": [
+    "attachments/Pasted image 20260410130848.png",
     "attachments/Pasted image 20260409200806.png",
     "forward.md",
     "attachments/Pasted image 20260409200757.png",
