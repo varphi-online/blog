@@ -1,4 +1,4 @@
-<span class="flex w-full justify-between">
+<span class="flex w-full justify-between mb-4">
     <a href="{{.Site.Home.Permalink}}" class="!text-muted" style="text-decoration: underline;">{{ site.Title }}</a>
     <script>
         const themes = ["light","dark"];
@@ -19,7 +19,7 @@
     </style>
     <button
         onclick="toggleTheme()"
-        class="cursor-pointer rounded-md bg-hole p-1.5">
+        class="cursor-pointer bg-hole p-1.5">
 		<img id="light" src='{{ relURL "sun.svg" }}' class="theme" style="display: block;">
 		<img id="dark" src='{{ relURL "moon.svg" }}' class="theme">
 	</button>

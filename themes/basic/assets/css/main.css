@@ -15,6 +15,8 @@
   --color-hole: var(--hole);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 body {
   padding-top: 1em;
 	background-color: var(--background);
@@ -24,6 +26,12 @@ body {
   scrollbar-width: thin;
   scrollbar-color: var(--muted) transparent;
   position: relative;
+
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  /* font-family: Verdana,sans-serif; */
 }
 html {
   scrollbar-color: var(--muted) transparent;
